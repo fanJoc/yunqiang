@@ -1,0 +1,64 @@
+/**app.wxss**/
+
+@import 'style/icon/iconfont.wxss';
+@import 'style/flexbox.wxss';
+page {
+    color: #666;
+    overflow: hidden;
+    height: 100%;
+    background: white;
+    font-family: "San Francisco", "Helvetica Neue", sans-serif, Arial, Verdana, "Trebuchet MS", "Microsoft YaHei", "STXihei";
+}
+view {
+    font-size: 28rpx;
+}
+.wrap {
+    height: 100%;
+}
+.m-hide {
+    display: none;
+}
+.m-show {
+    display: block;
+}
+.color-primary {
+    color: #3F7FCE;
+}
+.color-secondary {
+    color: #F90055;
+}
+.color-red {
+    color: red;
+}
+.color-666 {
+    color: #666666;
+}
+.color-ccc {
+    color: #cccccc;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.scroll-y {
+    min-height: 0;
+}
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30rpx 0;
+    font-size: 36rpx;
+}
+.banner .line {
+    height: 4rpx;
+    background: #f3f3f3;
+    flex: 1;
+}
+.banner .banner-cnt {
+    margin: 0 60rpx;
+    color: #3F7FCE;
+    font-weight: bold;
+}

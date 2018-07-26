@@ -1,0 +1,28 @@
+<view class="wrap flexbox-d-c" wx:if="{{isAuthorize}}">
+    <view class="my-head flexbox-a-c flexbox-j-c">
+        <image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+    </view>
+    <view class="my-list">
+        <view class="my-item" bindtap="myordersTap">
+            <text class="iconfont icon-order_icon"></text>
+            <text>我的订单</text>
+        </view>
+        <view class="my-item">
+            <text class="iconfont icon-lianxiren"></text>
+            <text>联系人：</text>
+            <text>范先生</text>
+        </view>
+        <view class="my-item">
+            <text class="iconfont icon-dianhua"></text>
+            <text>电话：</text>
+            <text>12345678901</text>
+        </view>
+        <button class="my-btn" open-type="contact">在线客服</button>
+    </view>
+    <view class="tip">如果机器在运输过程中损坏，或者操作不当机器出现问题，请联系在线客服免费为您解答（输入保修卡号）</view>
+</view>
+<view class="wrap flexbox-d-c is-Authorize" wx:else>
+    <view class="is-top">尚未登录。</view>
+    <view class="is-middle">登录后，方可查看我的信息</view>
+    <button class="is-btn" size="mini" open-type="getUserInfo" bindgetuserinfo="getUserInfo">使用微信登录</button>
+</view>

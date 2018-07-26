@@ -1,0 +1,19 @@
+<import src="../template/loading.wxml" />
+<template is="loading" data="{{_hiddenLoading:hiddenLoading}}" />
+<view class="wrap flexbox-d-c">
+    <scroll-view class="scroll-y flex-1" scroll-y>
+        <view class="line"></view>
+        <view class="list" wx:if="{{ordersList.length > 0}}">
+            <view wx:for="{{ordersList}}" wx:key="index" class="item">
+                <view class="flexbox-j-b">
+                    <text>订单编号：{{item.WxOrderId}}</text>
+                    <text>总价：￥{{item.TotalAmount}}</text>
+                </view>
+                <view>购买人：{{item.Name}}</view>
+                <view>手机号：{{item.Mobile}}</view>
+                <view>配送地址：{{item.Address}}</view>
+            </view>
+        </view>
+        <view class="noorders" wx:else>暂无订单。</view>
+    </scroll-view>
+</view>

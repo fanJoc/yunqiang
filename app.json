@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/goods/goods",
+        "pages/my/my",
+        "pages/product/product",
+        "pages/orderwait/orderwait",
+        "pages/myorders/myorders"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#3F7FCE",
+        "navigationBarTitleText": "运强机械厂",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#dddddd",
+        "selectedColor": "#3F7FCE",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "imgs/index.png",
+                "selectedIconPath": "imgs/index-curr.png"
+            },
+            {
+                "pagePath": "pages/goods/goods",
+                "text": "商品",
+                "iconPath": "imgs/goods.png",
+                "selectedIconPath": "imgs/goods-curr.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "imgs/my.png",
+                "selectedIconPath": "imgs/my-curr.png"
+            }
+        ]
+    }
+}

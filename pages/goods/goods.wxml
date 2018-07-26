@@ -1,0 +1,25 @@
+<import src="../template/loading.wxml" />
+<template is="loading" data="{{_hiddenLoading:hiddenLoading}}" />
+<view class="wrap flexbox-d-c">
+    <view class="banner">
+        <text class="line"></text>
+        <text class="banner-cnt">产品展示</text>
+        <text class="line"></text>
+    </view>
+    <scroll-view class="scroll-y flex-1" scroll-y>
+        <view class="list flexbox-j-a">
+            <view class="item" bindtap="productTap" wx:for="{{goodsList}}" wx:key="index" data-id="{{item.CommodityId}}">
+                <view class="item-img">
+                    <image src="{{item.ProductImage}}" mode="aspectFill"></image>
+                </view>
+                <view class="flexbox-d-c item-info">
+                    <view class="item-name">{{item.CommodityName}}</view>
+                    <view class="flexbox-j-b flexbox-a-c">
+                        <view class="item-price">￥{{item.CommodityPrice}}</view>
+                        <view class="item-sale color-ccc">已售{{item.SalesCount}}件</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,24 @@
+.orderinfo {
+    padding: 40rpx 40rpx;
+    margin-bottom: 10rpx;
+    background: #fff;
+}
+.item-li {
+    display: flex;
+    align-items: center;
+    padding: 20rpx 0;
+}
+.item-li-name {
+    width: 150rpx;
+    margin-right: 20rpx;
+}
+.input-class {
+    flex: 1;
+    height: 65rpx;
+    border-bottom: 1px dotted #ccc;
+}
+.btn {
+    font-size: 28rpx;
+    color: #fff;
+    background: #3F7FCE;
+}

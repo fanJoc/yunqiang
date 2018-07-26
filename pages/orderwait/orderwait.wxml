@@ -1,0 +1,17 @@
+<view class="wrap flexbox-d-c">
+    <view class="orderinfo">
+        <view class="item-li">
+            <text class="item-li-name">购买人：</text>
+            <input class="input-class" type="text" value="{{custom}}" bindinput="getCustom" />
+        </view>
+        <view class="item-li">
+            <text class="item-li-name">手机号：</text>
+            <input class="input-class" type="number" maxlength="11" value="{{tel}}" bindinput="getTel" />
+        </view>
+        <view class="item-li">
+            <text class="item-li-name">配送地址：</text>
+            <input class="input-class" type="text" value="{{address}}" bindinput="getAddress" />
+        </view>
+    </view>
+    <button size="mini" class="btn" bindtap="saveOrder">保存订单</button>
+</view>

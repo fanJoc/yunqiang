@@ -1,0 +1,23 @@
+.line {
+    height: 30rpx;
+    background: #f8f8f8;
+    margin-bottom: 30rpx;
+}
+.list {
+    padding: 10rpx 20rpx;
+}
+.item {
+    background: #b8b8b8;
+    color: #fff;
+    padding: 20rpx;
+    margin-bottom: 10rpx;
+}
+.item view {
+    margin: 10rpx 0;
+}
+.noorders {
+    padding: 60rpx 0;
+    font-size: 32rpx;
+    text-align: center;
+    color: #ccc;
+}

@@ -1,0 +1,67 @@
+<import src="../template/loading.wxml" />
+<template is="loading" data="{{_hiddenLoading:hiddenLoading}}" />
+<view class="wrap flexbox-d-c">
+    <scroll-view class="scroll-y flex-1 container" scroll-y>
+        <view class="ads">
+            <swiper indicator-dots="true" indicator-active-color="#3F7FCE" autoplay="false">
+                <swiper-item>
+                    <image src="{{product.CommodityImage1}}" mode="widthFix"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="{{product.CommodityImage2}}" mode="widthFix"></image>
+                </swiper-item>
+                <swiper-item>
+                    <image src="{{product.CommodityImage3}}" mode="widthFix"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="abstract">
+            <view class="item-li">
+                <text class="item-li-name">名称：</text>
+                <text class="item-li-cnt">{{product.CommodityName}}</text>
+            </view>
+            <view class="item-li">
+                <text class="item-li-name">定金：</text>
+                <text class="item-li-cnt color-red">￥{{unitPrice}}</text>
+            </view>
+            <view class="item-li">
+                <text class="item-li-name">库存：</text>
+                <text class="item-li-cnt">{{product.ResidualQuantity}}</text>
+            </view>
+            <view class="item-li">
+                <text class="item-li-name">购买数量：</text>
+                <view class="item-li-cnt input-num">
+                    <text bindtap="bindReduceNum">-</text>
+                    <input type="number" value="{{num}}" disabled />
+                    <text bindtap="bindAddNum">+</text>
+                </view>
+            </view>
+        </view>
+        <view class="br-class"></view>
+        <view class="describe">
+            <view>{{product.CommoditySummary}}</view>
+        </view>
+        <view class="imgs">
+            <image wx:for="{{productImgs}}" wx:key="index" src="{{item}}" mode="widthFix"></image>
+        </view>
+        <view class="br-class"></view>
+        <view class="comment">
+            <view wx:for="{{productComments}}" wx:key="index" class="com-item">
+                <view class="com-item-user">匿名用户</view>
+                <view class="com-item-cnt">{{item}}</view>
+            </view>
+            <view class="banner">
+                <text class="line"></text>
+                <text class="banner-cnt">已为您隐藏剩下的{{product.CommentCount}}条留言</text>
+                <text class="line"></text>
+            </view>
+            <view class="flexbox-j-c">
+                <button size="mini" class="btn" bindtap="leaveMsg">留言</button>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="pay">
+        <view class="pay-total">总计<text>{{totalPrice}}</text>元</view>
+        <view class="pay-btn" bindtap="orderwaitTap">确认支付</view>
+    </view>
+</view>

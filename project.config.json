@@ -1,0 +1,70 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.9",
+	"appid": "wx218ab2d33d1d35a0",
+	"projectname": "test",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "goods",
+					"pathName": "pages/goods/goods",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "product",
+					"pathName": "pages/product/product",
+					"query": "id=1"
+				},
+				{
+					"id": 3,
+					"name": "orderwait",
+					"pathName": "pages/orderwait/orderwait",
+					"query": "orderid=5"
+				},
+				{
+					"id": -1,
+					"name": "myorders",
+					"pathName": "pages/myorders/myorders",
+					"query": ""
+				}
+			]
+		}
+	}
+}
