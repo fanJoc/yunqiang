@@ -1,6 +1,6 @@
 // created by Fa1r. at 2018.07.18
 
-var base = 'http://192.168.1.200:10086/api';
+var base = 'https://api.yqjxc.cn/api';
 
 var request = {
     post: function(url, data, success) {

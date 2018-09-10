@@ -62,6 +62,6 @@
     </scroll-view>
     <view class="pay">
         <view class="pay-total">总计<text>{{totalPrice}}</text>元</view>
-        <view class="pay-btn" bindtap="orderwaitTap">确认支付</view>
+        <button class="pay-btn {{payStyle}}" disabled="{{payState}}" bindtap="payTap">{{payText}}</button>
     </view>
 </view>

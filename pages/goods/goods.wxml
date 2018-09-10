@@ -7,7 +7,7 @@
         <text class="line"></text>
     </view>
     <scroll-view class="scroll-y flex-1" scroll-y>
-        <view class="list flexbox-j-a">
+        <view class="list flexbox-j-b">
             <view class="item" bindtap="productTap" wx:for="{{goodsList}}" wx:key="index" data-id="{{item.CommodityId}}">
                 <view class="item-img">
                     <image src="{{item.ProductImage}}" mode="aspectFill"></image>

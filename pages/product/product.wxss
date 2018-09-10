@@ -92,6 +92,11 @@
     justify-content: center;
     display: flex;
     align-items: center;
+    border-radius: 0;
+}
+.pay-btn-active{
+    background: #666 !important;
+    color: #fff !important;
 }
 .comment {
     padding: 10rpx 20rpx;
